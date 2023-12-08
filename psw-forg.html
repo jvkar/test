@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forget password</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <label for="">enter your old password</label>
+        <input type="password" placeholder="enter the old password" id="old-pass" required>
+        <label for="">enter a new password</label>
+        <input type="password" placeholder="enter a new password" id="new-pass" required>
+        <label for=""> confirm the new password</label>
+        <input type="password" placeholder="confirm the new password" id="confirm-pass" required>
+        <button id="up-btn">Update</button>
+        <button id="cn-btn">cancel</button>
+    </div>
+</body>
+<script>
+    const oldpass=document.getElementById('old-pass');
+    const newpass=document.getElementById('new-pass');
+    const confpass=document.getElementById('confirm-pass');
+    const up=document.getElementById('up-btn');
+    const cancel=document.getElementById('cn-btn');
+    up.addEventListener('click',()=>{
+      if(oldpass.value.length===0){
+        alert('enter your old password');
+      }
+      else if(newpass.value.length===0){
+        alert('enter your new password');
+      }
+      else if (confpass.value.length===0){
+        alert('confirm your new password');
+      }
+      else {
+        alert('update success');
+        window.location.href='index.html'
+      }
+    })
+    cancel.addEventListener('click',()=>{
+        window.location.href='index.html'
+    })
+</script>
+</html>

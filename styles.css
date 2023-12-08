@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to top right,#051937,#071E8B);
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+}
+div{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background-color: rgba(255, 255, 255, 0.698);
+     width: 50%;
+     margin: 10px auto;
+    border-radius: 25px;
+    border: 1px solid #000a18;
+    padding: 10px;
+
+}
+div img{
+    margin: 0 auto;
+}
+div label{
+     text-transform: uppercase;
+     margin-left: 2%;
+     font-size: 15px;
+     margin-bottom: 2%;
+}
+div input{
+     width: 100%;
+     border-radius: 25px;
+     border: 1px solid transparent;
+     color: white;
+     background-color: black;
+     padding: 3px;
+     transition-duration: 1s;
+     transition-property: transform;
+     margin-bottom: 2%;
+}
+input:focus{
+    outline: none;
+    border: 1px solid white;
+    transform: translateY(-20%);
+}
+input:hover{
+    border: 1px solid white;
+    outline: none;
+}
+div button {
+     margin: 5px auto;
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 25px;
+     padding: 4px;
+    cursor: pointer;
+    transition-duration: 1s;
+
+    }
+    div button:hover {
+        transform: translateY(10%);
+    }
+div a {
+    margin: 5px auto;
+    font-size: 10px;
+    color: red;
+}

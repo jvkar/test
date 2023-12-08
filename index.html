@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <img src="icons8-user-90.png" alt="" height="40px" width="40px">
+        <label for="">Username</label>
+        <input type="text" placeholder="enter your user name" id="user" required>
+        <label for="">password</label>
+        <input type="password" placeholder="enter your password" id="pass" required>
+        <button id="sign-in">Sign in</button>
+        <a href="psw-forg.html">forgot password ?</a>
+    </div>
+</body>
+<script>
+    const user=document.getElementById('user');
+    const password=document.getElementById('pass')
+    const sign=document.getElementById('sign-in');
+    sign.addEventListener('click',()=>{
+        if(user.value.length===0 && pass.value.length===0 ){
+        alert('enter username and password');
+        }else if(user.value.length===0){
+             alert('enter username');
+        }else if(password.value.length===0){
+            alert('enter password');
+        }
+        else{
+            alert('login success')
+        }
+             
+        
+    })
+</script>
+</html>
